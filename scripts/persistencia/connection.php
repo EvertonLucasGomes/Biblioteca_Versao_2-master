@@ -12,7 +12,7 @@
          * @return mysqli|null
          */
         public static function getConnection(){
-            return mysqli_connect("127.0.0.1", "root", "", "database");
+            return mysqli_connect("127.0.0.1", "root", "" , "database");
         }
     }
 ?>

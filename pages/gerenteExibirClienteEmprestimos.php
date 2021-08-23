@@ -88,7 +88,7 @@ include("../scripts/login/verificaLoginGerente.php");
                     }
                 }
                 else{
-                    print('<div class="alerta atencao">Nenhum existe Emprestimo com este CPF.</div>');
+                    print('<div class="alerta atencao">Não existe nenhum emprestimo com este CPF.</div>');
                 }
             ?>
             <form action="gerenteConsultaEmprestimo.php">

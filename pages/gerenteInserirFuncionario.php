@@ -73,7 +73,7 @@ include("../scripts/login/verificaLoginGerente.php");
                             print('<div class="alerta error">CPF inválido</div>');
                         }
                     }else{
-                        print('<div class="alerta error">Não pode ter número nos campos de nome e cidade.</div>');
+                        print('<div class="alerta error">Não insira caracteres numéricos nos campos "nome" e "cidade".</div>');
                     }
 
                 ?>

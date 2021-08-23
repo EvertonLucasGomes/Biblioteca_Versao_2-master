@@ -9,7 +9,7 @@ if (empty($_POST['user']) || empty($_POST['password'])) {
 
 $funcionario = persistencia::getInstance()->validarLogin($_POST['user'], $_POST['password']);
 
-if ($funcionario != false) {
+if ($funcionario) {
     $_SESSION['user'] = $_POST['user'];
     $_SESSION['cargo'] = $funcionario->getCargo();
 

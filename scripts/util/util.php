@@ -27,14 +27,14 @@
             $cpf = preg_replace( '/[^0-9]/is', '', $cpf );
              
             // Verifica se foi informado todos os digitos corretamente
-            if (strlen($cpf) != 11) {
+            if (strlen($cpf) != 11 || preg_match('/(\d)\1{10}/', $cpf)) {
                 return false;
             }
         
             // Verifica se foi informada uma sequência de digitos repetidos. Ex: 111.111.111-11
-            if (preg_match('/(\d)\1{10}/', $cpf)) {
-                return false;
-            }
+            //if (preg_match('/(\d)\1{10}/', $cpf)) {
+            //    return false;
+            //}
         
             // Faz o calculo para validar o CPF
             for ($t = 9; $t < 11; $t++) {

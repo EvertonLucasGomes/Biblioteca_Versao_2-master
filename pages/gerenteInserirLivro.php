@@ -8,7 +8,7 @@ include("../scripts/login/verificaLoginGerente.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/global.css">
-    <link rel="stylesheet" href="../styles/cadastroForms.css">
+    <link rel="stylesheet" href="../styles/tabela.css">
     <link rel="stylesheet" href="../styles/msg.css">
     <link rel="icon" type="imagem/png" href="../assets/icon.png" />
     <title>Cadastro de livro</title>
@@ -63,7 +63,7 @@ include("../scripts/login/verificaLoginGerente.php");
                         print('<div class="alerta error">Já existe um livro cadastrado com este código.</div>');
                     }
                 }else{
-                    print('<div class="alerta error">Não pode ter número nos campos de nome e cidade.</div>');
+                    print('<div class="alerta error">Não insira caracteres numéricos nos campos "nome" e "cidade".</div>');
                 }        
             ?>
             
@@ -72,7 +72,6 @@ include("../scripts/login/verificaLoginGerente.php");
             </form>
         </div>
     </main>
-    </div>
-    
+    </div>    
 </body>
 </html>

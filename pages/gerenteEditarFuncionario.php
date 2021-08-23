@@ -139,8 +139,8 @@ include("../scripts/login/verificaLoginGerente.php");
                 print('<div class="alerta atencao">Não existe funcionario com este CPF.</div>');
             }
         ?>
-        <form action="gerenteConsultaFuncionario.php">
-            <button type="submit" id='botao'>Voltar</button>
+        <form action="gerenteConsultaFuncionario.php" style = 'display: flex; align-items: center; justify-content: center;'>
+            <button type="submit" id='botao' >Voltar</button>
         </form>
 
         </div>

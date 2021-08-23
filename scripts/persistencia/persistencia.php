@@ -117,7 +117,7 @@
                 $query
             );
             
-            while ($dados_cliente = mysqli_fetch_assoc($cliente)) {
+            if ($dados_cliente = mysqli_fetch_assoc($cliente)) {
                 //RETORNA UMA INSTANCIA DE CLIENTE
                 return new cliente(
                     $dados_cliente['cpf'],
@@ -148,7 +148,7 @@
                 $query
             );
             
-            while ($dados_livro = mysqli_fetch_assoc($livro)) {
+            if ($dados_livro = mysqli_fetch_assoc($livro)) {
                 //RETORNA UMA INSTANCIA DE LIVRO
                 return new livro(
                     $dados_livro['codigo_livro'],
@@ -179,7 +179,7 @@
                 $query
             );
             
-            while ($dados_funcionario = mysqli_fetch_assoc($funcionario)) {
+            if ($dados_funcionario = mysqli_fetch_assoc($funcionario)) {
                 //RETORNA UMA INSTANCIA DE FUNCIONARIO
                 return new funcionario(
                     $dados_funcionario['cpf'],
@@ -249,7 +249,7 @@
                 $query
             );
             
-            while ($dados_aluguel = mysqli_fetch_assoc($aluguel)) {
+            if ($dados_aluguel = mysqli_fetch_assoc($aluguel)) {
                 
                 $instanceAluguel = new clienteAlugaLivro(
                     new cliente(
@@ -346,7 +346,7 @@
                 $query
             );
             
-            while ($quantidade = mysqli_fetch_assoc($quant_clientes)) {
+            if ($quantidade = mysqli_fetch_assoc($quant_clientes)) {
                 //
                 return $quantidade['quant'];
             }
@@ -366,7 +366,7 @@
                 $query
             );
             
-            while ($quantidade = mysqli_fetch_assoc($quant_livros)) {
+            if ($quantidade = mysqli_fetch_assoc($quant_livros)) {
                 //RETORNA QUANTIDADE DE LIVROS CADASTRADOS
                 return $quantidade['quant'];
             }
@@ -386,7 +386,7 @@
                 $query
             );
             
-            while ($quantidade = mysqli_fetch_assoc($quant_livros)) {
+            if ($quantidade = mysqli_fetch_assoc($quant_livros)) {
                 //RETORNA QUANTIDADE DE LIVROS CADASTRADOS
                 return $quantidade['quant'];
             }
@@ -406,7 +406,7 @@
                 $query
             );
             
-            while ($livro = mysqli_fetch_assoc($stock)) {
+            if ($livro = mysqli_fetch_assoc($stock)) {
                 //RETORNA QUANTIDADE DE LIVROS NO STOCK
                 return $livro['quantidade'];
             }
@@ -427,9 +427,11 @@
                 $query
             );
 
-            while ($q = mysqli_fetch_assoc($quant)) {
-                if ($q['quant_pendencias'] > 0)
+            if ($q = mysqli_fetch_assoc($quant)) {
+                if ($q['quant_pendencias'] > 0){
                     return true;
+                }
+                    
                 
                 return false;
             }
@@ -589,9 +591,8 @@
         public function existEmprestimo($idAluguel){
             $instanceAluguel = $this->getClienteAlugaLivro($idAluguel);
 
-            if($instanceAluguel != null){
-                if($instanceAluguel->getStatus() == 'PENDENTE')
-                    return true;
+            if($instanceAluguel != null && $instanceAluguel->getStatus() == 'PENDENTE'){
+                return true;       
             }
             
             return false;
@@ -826,7 +827,7 @@
                 $query
             );
             
-            while ($dados_funcionario = mysqli_fetch_assoc($funcionario)) {
+            if ($dados_funcionario = mysqli_fetch_assoc($funcionario)) {
                 return new funcionario(
                     $dados_funcionario['cpf'],
                     $dados_funcionario['nome'],

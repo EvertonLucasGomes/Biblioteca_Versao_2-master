@@ -3,41 +3,35 @@
 /* Geral */
 
 .alerta {
-	padding: 25px;
-	border: 1px solid gray;
-	border-radius: 3px;
-	margin: 10px;
-	font-size: 18px;
+  padding: 25px;
+  border: 1px solid gray;
+  border-radius: 30px;
+  margin-top: 20px;
+  font-size: 20px;
 }
+
+.atencao {
+  width: 100%;
+  border-color: rgba(246, 187, 66, 0.7);
+  color: black;
+  background-color: rgba(246, 187, 66, 0.7);
+}
+
 .error {
-    position: absolute;
-    bottom: 5%;
-    right: 12%;
-    width: 46%;
-	border-color: rgba(237, 85, 101, 0.7);
-	color: black;
-	background-color: rgba(237, 85, 101, 0.7);
+  width: 100%;
+  border-color: rgba(237, 85, 101, 0.7);
+  color: black;
+  background-color: rgba(237, 85, 101, 0.7);
 }
 .sucesso {
-    position: absolute;
-    bottom: 5%;
-    right: 12%;
-    width: 46%;
-	border-color: rgba(160, 212, 104, 0.7);
-	color: black;
-	background-color: rgba(160, 212, 104, 0.7);
+  width: 100%;
+  border-color: rgba(160, 212, 104, 0.7);
+  color: black;
+  background-color: rgba(160, 212, 104, 0.7);
 }
-.atencao {
-    position: absolute;
-    bottom: 5%;
-    right: 12%;
-    width: 46%;
-	border-color: rgba(246, 187, 66, 0.7);
-	color: black;
-	background-color: rgba(246, 187, 66, 0.7);
-}
+
 .info {
-	border-color: #2f80e7;
-	color: #FFF;
-	background-color: #5d9cec;
+  border-color: #2f80e7;
+  color: #fff;
+  background-color: #5d9cec;
 }
