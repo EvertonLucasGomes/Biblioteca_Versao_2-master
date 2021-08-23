@@ -88,21 +88,4 @@
         }
     }
 
-    //$c1 = new cliente('123.654.965-50');
-    /*$l1 = new livro(789);
-    $data_aluguel = '07/08/2021';
-
-    $cal = new clienteAlugaLivro($c1, $l1, $data_aluguel);
-
-    print("
-        DADOS DO ALUGUEL: 
-        <br>
-        <br>
-        CLIENTE CPF: ".$cal->getClienteAluguel()."
-        <br>
-        LIVRO NUMERO: ".$cal->getLivroAluguel()."
-        <br>
-        DATA DO ALUGUEL: ".$cal->getDataAluguel()."
-        <br>
-    ");*/
 ?>
