@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #d0d1ff;
+}
+
+#page-auth {
+  display: flex;
+  max-width: 800px;
+  align-items: stretch;
+  height: 70vh;
+  justify-content: center;
+  margin: 120px auto 20px auto;
+  border-radius: 2em;
+}
+
+main {
+  flex: 1;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 120px 80px;
+  border-radius: 30px 0px 0px 30px;
+}
+
+aside {
+  flex: 1;
+  background: #d8bbff;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0px 30px 30px 0px;
+  color: #fff;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  /* Criando um container de 320px e fazendo com que o conteudo se estique nele */
+  max-width: 320px;
+  align-items: stretch;
+  text-align: left;
+}
+
+.erro-login {
+  color: white;
+  background-color: red;
+  font-size: 11px;
+  padding: 7px;
+}
+
+.main-content h2 {
+  font: 700 36px "Manrope", sans-serif;
+}
+
+.main-content p {
+  font: 400 15px "Roboto", sans-serif;
+}
+
+strong {
+  font: 700 36px "Manrope", sans-serif;
+  line-height: 42px;
+  margin-top: 16px;
+}
+
+aside p {
+  font: 400 20px "Roboto", sans-serif;
+  line-height: 32px;
+  margin-top: 16px;
+}
+
+form input {
+  margin-top: 15px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 0 16px;
+  background: #fff;
+  border: 1px solid #a8a8b3;
+}
+
+#user {
+  background: url(../assets/user32.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 25px;
+}
+
+#password {
+  background: url(../assets/padlock32.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 25px;
+}
+
+button {
+  margin-top: 16px;
+  margin-top: 64px;
+  height: 50px;
+  border-radius: 8px;
+  font-weight: 500;
+  background: #9381ff;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  border: 0;
+
+  transition: filter 0.2s;
+}
+
+button:hover {
+  filter: brightness(0.9);
+}
+
+button,
+input {
+  width: 100%;
+}

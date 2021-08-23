@@ -1,0 +1,66 @@
+form {
+    background: #CCD5FF;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 860px;
+}
+
+
+form fieldset {
+    border: 0;  
+}
+
+form .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+   
+}
+
+form .field-group {
+    display: flex;
+}
+
+form input, form select {
+    background-color: #fff;;
+    border: 0;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    border-radius: 8px;
+
+}
+
+form label {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+form .field-group .field + .field {
+    margin-left: 20px;
+}
+
+form button {
+    width: 260px;
+    height: 56px;
+    background: #9381FF;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    font-size: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+form button:hover {
+    filter: brightness(0.9);
+}
+
+#bairro {
+    background: #e8e8e4;
+}
+

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+form {
+    background: #CCD5FF;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 860px;
+}
+
+
+form fieldset {
+    border: 0;  
+}
+
+form .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+   
+}
+
+form .field-group {
+    display: flex;
+}
+
+form input {
+    background-color: #fff;;
+    border: 0;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+form label {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+form span {
+    font: 400 25px 'Roboto', sans-serif;
+    color: #7400b8;
+}
+
+#botao {
+    color: #fff;
+    background: #9381FF;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#botao:hover {
+    filter: brightness(0.9);
+}
+
+#botaoDelete{
+    color: #fff;
+    background: red;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#botaoDelete:hover {
+    filter: brightness(0.9);
+}
+
+
+
+
+
