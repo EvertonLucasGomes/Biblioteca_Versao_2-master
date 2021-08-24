@@ -82,7 +82,7 @@
             
             //TIRAR LIVRO DO STOCK
             $this->updateQuantidadeEmprestimo(
-                $aluguel->getLivroAluguel(),
+                $aluguel->getLivroAluguel()->getCodigo(),
                 -1
             );
         }
@@ -204,7 +204,7 @@
          * Retorna uma lista de instâncias de Livro que contenham a string $nome_livro
          * @param string $nome_livro
          * 
-         * @return livro[]|null 
+         * @return livro[]|array 
          */
         public function getLivroNome($nome_livro){
             $arrayLivros = array();

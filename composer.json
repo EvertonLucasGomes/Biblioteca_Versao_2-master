@@ -6,5 +6,8 @@
         "psr-4": {
             "BeloBiblio\\" : "scripts/"
         }
+    },
+    "require": {
+        "phpdocumentor/phpdocumentor": "3.*"
     }
 }

@@ -1,7 +1,7 @@
 
 <?php
     /**
-     * Entidade Connextion - 
+     * Entidade Connection - 
      * Retorna uma conexão com o MySql
      * 
      * @copyright 2021, Igor Santos, Gabriel Vasconcelos, Rafaella Weiss, Everton Lima

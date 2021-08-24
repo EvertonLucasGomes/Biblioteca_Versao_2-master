@@ -14,3 +14,4 @@
 [24/08/2021 às 12:45:21] [gabras] : Cliente eve45 não cadastrado. Operação inválida
 [24/08/2021 às 12:46:48] [gabras] : Cliente Rafaela Cadastrado com sucesso.
 [24/08/2021 às 12:47:42] [gabras] : Cliente Rafaela não cadastrado. CPF já cadastrado
+[24/08/2021 às 14:10:32] [gabras] : Emprestimo do livro 5 Cadastrado com sucesso
