@@ -58,6 +58,7 @@ include("../scripts/login/verificaLoginGerente.php");
                 );
                 
                 print('<div class="alerta sucesso">Cliente editado com sucesso.</div>');
+                util::generateLog('Cliente '. $_POST["nameCliente"]. ' Editado com sucesso');
             ?>
             <form action="gerenteConsultaCliente.php">
                 <button type="submit" id='botao'>Voltar</button>

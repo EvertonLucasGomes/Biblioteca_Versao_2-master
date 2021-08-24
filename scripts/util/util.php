@@ -56,8 +56,20 @@
             $dataHoraAtual = date('d/m/Y à\s H:i:s');
             $usuario = $_SESSION['user'];
 
-            $log = fopen('log.txt', 'a+');
+            $log = fopen('../scripts/log/log.txt', 'a+');
             fwrite($log, "[$dataHoraAtual] [$usuario] : $string\n");
+
+            fclose($log);
+        }
+
+        public static function generateLogLogout($string){
+            date_default_timezone_set('America/Sao_Paulo');
+
+            $dataHoraAtual = date('d/m/Y à\s H:i:s');
+            $usuario = $_SESSION['user'];
+
+            $log = fopen('../log/log.txt', 'a+');
+            fwrite($log, "[$dataHoraAtual] [$usuario] : $string\n\n");
 
             fclose($log);
         }

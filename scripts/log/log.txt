@@ -1,0 +1,3 @@
+[24/08/2021 às 11:35:22] [gabras] : Usuário Gerente logado.
+[24/08/2021 às 11:35:31] [gabras] : Logout de usuário.
+

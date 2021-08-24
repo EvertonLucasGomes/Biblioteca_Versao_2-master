@@ -61,6 +61,8 @@ include("../scripts/login/verificaLoginGerente.php");
                 );
                 
                 print('<div class="alerta sucesso">Funcionario editado com sucesso.</div>');
+                util::generateLog('Funcionário '. $_POST["nameFuncionario"]. ' Editado com sucesso');
+
             ?>
             <form action="gerenteConsultaFuncionario.php">
                 <button type="submit" id='botao'>Voltar</button>

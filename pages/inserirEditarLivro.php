@@ -56,6 +56,7 @@ include("../scripts/login/verificaLogin.php");
                 );
 
                 print('<div class="alerta sucesso">Livro editado com sucesso.</div>');
+                util::generateLog('Livro '. $_POST["nome"]. ' Editado.');
             ?>
             <form action="consultaLivro.php">
                 <button type="submit" id='botao'>Voltar</button>

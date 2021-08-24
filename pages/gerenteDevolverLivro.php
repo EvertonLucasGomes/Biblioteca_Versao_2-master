@@ -49,9 +49,13 @@ include("../scripts/login/verificaLoginGerente.php");
                     $_POST['dataDevolucao']
                 );
                 print('<div class="alerta sucesso">Livro entregue com sucesso.</div>');
+                util::generateLog('Emprestimo '. $_POST["idAluguel"].' Devolvido com sucesso.');
+
             }
             else{
                 print('<div class="alerta atencao">Emprestimo não existe ou já foi entregue.</div>');
+                util::generateLog('Falha ao devolver emprestimo '. $_POST["idAluguel"]);
+
             }
         ?>
         <form action="gerenteDevolucaoLivros.php">

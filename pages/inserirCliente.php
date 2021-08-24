@@ -42,7 +42,7 @@ include("../scripts/login/verificaLogin.php");
 
                 include("../scripts/facade/conexao.php");
 
-                if(util::existNumero($_POST["nameCliente"]) == false and util::existNumero($_POST["cidadeCliente"]) == false)
+                if(util::existNumero($_POST["nameCliente"]) == false && util::existNumero($_POST["cidadeCliente"]) == false)
                 {
                     if(util::validaCPF($_POST["cpfCliente"])){
                         if(persistencia::getInstance()->existCliente($_POST["cpfCliente"]) == false){
@@ -59,21 +59,21 @@ include("../scripts/login/verificaLogin.php");
                             );
                             
                             print('<div class="alerta sucesso">Cliente cadastrado.</div>');
-                            util::generateLog('Cliente cadastrado.');
+                            util::generateLog('Cliente '. $_POST["nameCliente"].' cadastrado.');
                         }
                         else{
                             print('<div class="alerta atencao">Já existe um Cliente cadastrado com este CPF.</div>');
-                            util::generateLog('Cliente não cadastrado. CPF já cadastrado');
+                            util::generateLog('Cliente '. $_POST["nameCliente"].' não cadastrado. CPF já cadastrado');
                             
                         }
                     }else{
                         print('<div class="alerta error">CPF inválido</div>');
-                        util::generateLog('Cliente não cadastrado. CPF inválido');
+                        util::generateLog('Cliente '. $_POST["nameCliente"].' não cadastrado. CPF inválido');
                     }
                 }
                 else{
                     print('<div class="alerta error">Não insira caracteres numéricos nos campos "nome" e "cidade".</div>');
-                    util::generateLog('Cliente não cadastrado. Operação inválida');
+                    util::generateLog('Cliente '. $_POST["nameCliente"].' não cadastrado. Operação inválida');
                 }
             ?>
             

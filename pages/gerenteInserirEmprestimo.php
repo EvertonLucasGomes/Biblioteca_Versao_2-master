@@ -46,12 +46,15 @@ include("../scripts/login/verificaLoginGerente.php");
                     
                     if(persistencia::getInstance()->existCliente($_POST['cpfCliente']) == false){
                         print('<div class="alerta error">Cliente não existe.</div>');
+                        util::generateLog('emprestimo do livro '. $_POST["codLivro"]. ' não cadastrado. Cliente não encontrado.');
                     }
                     elseif(persistencia::getInstance()->existLivro($_POST['codLivro']) == false){
                         print('<div class="alerta error">Livro não existe.</div>');
+                        util::generateLog('emprestimo do livro '. $_POST["codLivro"]. ' não cadastrado. Livro não existente.');
                     }
                     elseif(persistencia::getInstance()->getQuantidadeLivro($_POST['codLivro']) == 0){
                         print('<div class="alerta error">Quantidade do livro indisponível indisponível.</div>');
+                        util::generateLog('emprestimo do livro '. $_POST["codLivro"]. ' não cadastrado. Quantidade insuficiente');
                     }
                     else{
                         conexao::getInstance()->salvarClienteAlugaLivro(
@@ -60,6 +63,8 @@ include("../scripts/login/verificaLoginGerente.php");
                             $_POST['aluguelData']
                         );
                         print('<div class="alerta sucesso">Emprestimo cadastrado.</div>');
+                        util::generateLog('Emprestimo do livro '. $_POST["codLivro"]. ' Cadastrado com sucesso');
+
                     }
                 ?>
                 <input type="submit" value="Voltar" id="botao">

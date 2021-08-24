@@ -1,5 +1,6 @@
 <?php
 include("../scripts/login/verificaLoginGerente.php");
+include("../scripts/util/util.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,6 +49,9 @@ include("../scripts/login/verificaLoginGerente.php");
                 persistencia::getInstance()->deleteCliente($_POST['cpfCliente']);
                 
                 print('<div class="alerta sucesso">Cliente excluido.</div>');
+                
+                util::generateLog('Cliente '. $_POST["cpfCliente"]. ' Removido com sucesso');
+
                 
             ?>
 

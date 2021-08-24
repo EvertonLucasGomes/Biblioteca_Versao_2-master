@@ -44,6 +44,8 @@ include("../scripts/login/verificaLogin.php");
                 persistencia::getInstance()->deleteCliente($_POST['cpfCliente']);
                 
                 print('<div class="alerta sucesso">Cliente excluido.</div>');
+
+                util::generateLog('Cliente '. $_POST["cpfCliente"]. ' Removido com sucesso');
                 
             ?>
 

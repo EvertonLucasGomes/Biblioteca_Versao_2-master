@@ -1,5 +1,6 @@
 <?php
 include("../scripts/login/verificaLoginGerente.php");
+include("../scripts/util/util.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,6 +50,7 @@ include("../scripts/login/verificaLoginGerente.php");
                 );
 
                 print('<div class="alerta sucesso">Funcionario excluido.</div>');
+                util::generateLog('Funcionário'. $_POST["cpfFuncionario"]. 'Removido com sucesso');
                 
             ?>
 

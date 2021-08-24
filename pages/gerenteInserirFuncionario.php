@@ -65,12 +65,15 @@ include("../scripts/login/verificaLoginGerente.php");
                             );
 
                             print('<div class="alerta sucesso">Funcionario cadastrado com sucesso.</div>');
+                            util::generateLog('Funcionario '. $_POST["nameFuncionario"].' Cadastrado com sucesso.');
                             }
                             else{
                                 print('<div class="alerta error">Já existe um Funcionario cadastrado com este CPF.</div>');
+                                util::generateLog('Funcionario '. $_POST["nameFuncionario"].' Não cadastrado. CPF já cadastrado.');
                             }
                         }else{
                             print('<div class="alerta error">CPF inválido</div>');
+                            util::generateLog('Funcionario '. $_POST["nameFuncionario"].' Não cadastrado. CPF invalido.');
                         }
                     }else{
                         print('<div class="alerta error">Não insira caracteres numéricos nos campos "nome" e "cidade".</div>');

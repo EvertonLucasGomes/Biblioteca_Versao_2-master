@@ -1,5 +1,6 @@
 <?php
 include("../scripts/login/verificaLoginGerente.php");
+include("../scripts/util/util.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -50,9 +51,11 @@ include("../scripts/login/verificaLoginGerente.php");
                         $_POST['cod']
                     );
                     print('<div class="alerta sucesso">Livro excluido.</div>');
+                    util::generateLog('Livro'. $_POST["cod"]. 'Removido com sucesso');
                 }
                 else{
                     print('<div class="alerta error">Você não pode excluir um livro com alguel pendente.</div>');
+                    util::generateLog('Livro'. $_POST["cod"]. 'Não removido. Livro com emprestimo pendente');
                 }
             ?>
 

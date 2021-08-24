@@ -56,6 +56,7 @@ include("../scripts/login/verificaLogin.php");
                 );
                 
                 print('<div class="alerta sucesso">Cliente editado com sucesso.</div>');
+                util::generateLog('Cliente '. $_POST["cpfCliente"].' Editado.');
             ?>
             <form action="consultaCliente.php">
                 <button type="submit" id='botao'>Voltar</button>

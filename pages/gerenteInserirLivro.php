@@ -58,9 +58,11 @@ include("../scripts/login/verificaLoginGerente.php");
                             $_POST['genero']
                         );
                         print('<div class="alerta sucesso">Livro cadastrado.</div>');
+                        util::generateLog('Livro cadastrado '. $_POST["nome"]);
                     }
                     else{
                         print('<div class="alerta error">Já existe um livro cadastrado com este código.</div>');
+                        util::generateLog('Livro '. $_POST["codLivro"]. ' não cadastrado. Código já em utilização');
                     }
                 }else{
                     print('<div class="alerta error">Não insira caracteres numéricos nos campos "nome" e "cidade".</div>');

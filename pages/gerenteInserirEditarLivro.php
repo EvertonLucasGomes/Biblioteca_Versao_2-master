@@ -58,6 +58,8 @@ include("../scripts/login/verificaLoginGerente.php");
                 );
 
                 print('<div class="alerta sucesso">Livro editado com sucesso.</div>');
+                util::generateLog('Livro '. $_POST["nome"]. ' Editado com sucesso');
+
             ?>
             <form action="gerenteConsultaLivro.php">
                 <button type="submit" id='botao'>Voltar</button>

@@ -47,6 +47,9 @@ include("../scripts/login/verificaLogin.php");
                 );
 
                 print('<div class="alerta sucesso">Emprestimo excluido.</div>');
+
+                util::generateLog('Emprestimo '. $_POST["id"]. ' Removido com sucesso');
+
                 
             ?>
 
