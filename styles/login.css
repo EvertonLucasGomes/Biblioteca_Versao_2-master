@@ -101,8 +101,7 @@ form input {
 }
 
 button {
-  margin-top: 16px;
-  margin-top: 64px;
+  margin-top: 8%;
   height: 50px;
   border-radius: 8px;
   font-weight: 500;

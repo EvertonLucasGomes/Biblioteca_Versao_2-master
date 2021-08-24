@@ -40,14 +40,14 @@ include("../scripts/login/verificaLoginGerente.php");
     <main>
         <strong>Cadastro de Funcionario</strong>
         <div id="content_main">
-            <form action="gerenteCadastrarFuncionario.php">
+        <form action="gerenteCadastrarFuncionario.php">
                 <?php
                     include("../scripts/facade/conexao.php");
-                    if(!util::existNumero($_POST["nameFuncionario"]) && !util::existNumero($_POST["cidadeFuncionario"]))
+                    if(util::existNumero($_POST["nameFuncionario"]) == false and util::existNumero($_POST["cidadeFuncionario"]) == false)
                     {
                         if(util::validaCPF($_POST["cpfFuncionario"]))
                         {
-                            if(!persistencia::getInstance()->existFuncionario($_POST["cpfFuncionario"]))
+                            if(persistencia::getInstance()->existFuncionario($_POST["cpfFuncionario"]) == false)
                             {
                                 conexao::getInstance()->salvarFuncionario(
                                 $_POST["cpfFuncionario"], 
@@ -65,15 +65,12 @@ include("../scripts/login/verificaLoginGerente.php");
                             );
 
                             print('<div class="alerta sucesso">Funcionario cadastrado com sucesso.</div>');
-                            util::generateLog('Funcionario '. $_POST["nameFuncionario"].' Cadastrado com sucesso.');
                             }
                             else{
                                 print('<div class="alerta error">Já existe um Funcionario cadastrado com este CPF.</div>');
-                                util::generateLog('Funcionario '. $_POST["nameFuncionario"].' Não cadastrado. CPF já cadastrado.');
                             }
                         }else{
                             print('<div class="alerta error">CPF inválido</div>');
-                            util::generateLog('Funcionario '. $_POST["nameFuncionario"].' Não cadastrado. CPF invalido.');
                         }
                     }else{
                         print('<div class="alerta error">Não insira caracteres numéricos nos campos "nome" e "cidade".</div>');

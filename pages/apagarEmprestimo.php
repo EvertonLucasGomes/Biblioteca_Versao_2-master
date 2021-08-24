@@ -1,5 +1,6 @@
 <?php
 include("../scripts/login/verificaLogin.php");
+include("../scripts/util/util.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">

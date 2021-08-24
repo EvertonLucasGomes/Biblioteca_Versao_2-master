@@ -47,7 +47,7 @@ include("../scripts/login/verificaLoginGerente.php");
                 <fieldset>
                     <div class="field">
                         <label for="cpfCliente">CPF do cliente</label>
-                        <input type="text" name="cpfCliente" id="cpfCliente" required>
+                        <input type="text" name="cpfCliente" id="cpfCliente" placeholder="000.000.000-00" required>
                     </div>
 
                     <div class="field-group">
@@ -61,7 +61,7 @@ include("../scripts/login/verificaLoginGerente.php");
                     <div class="field-group">
                         <div class="field">
                             <label for="aluguelData">Data do aluguel</label>
-                            <input type="text" name="aluguelData" id="aluguelData" required>
+                            <input type="text" name="aluguelData" id="aluguelData" placeholder="AAAA-MM-DD" required>
                         </div>
 
                     </div>

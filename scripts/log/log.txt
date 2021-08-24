@@ -15,3 +15,57 @@
 [24/08/2021 às 12:46:48] [gabras] : Cliente Rafaela Cadastrado com sucesso.
 [24/08/2021 às 12:47:42] [gabras] : Cliente Rafaela não cadastrado. CPF já cadastrado
 [24/08/2021 às 14:10:32] [gabras] : Emprestimo do livro 5 Cadastrado com sucesso
+[24/08/2021 às 16:09:23] [gabras] : Usuário Gerente logado.
+[24/08/2021 às 16:09:24] [gabras] : Logout de usuário.
+
+[24/08/2021 às 16:13:31] [gabras] : Usuário Gerente logado.
+[24/08/2021 às 16:42:42] [gabras] : Logout de usuário.
+
+[24/08/2021 às 16:50:01] [] : Falha na autenticação.
+[24/08/2021 às 16:51:32] [gabras] : Usuário Gerente logado.
+[24/08/2021 às 17:03:56] [gabras] : Cliente Rodrigo Campos Cadastrado com sucesso.
+[24/08/2021 às 17:05:05] [gabras] : Cliente Victor Farias Melo Cadastrado com sucesso.
+[24/08/2021 às 17:06:17] [gabras] : Cliente Rafaela Weiss Cadastrado com sucesso.
+[24/08/2021 às 17:07:23] [gabras] : Livro cadastrado O pequeno principe
+[24/08/2021 às 17:08:10] [gabras] : Livro cadastrado Volta ao rio
+[24/08/2021 às 17:08:56] [gabras] : Livro cadastrado Matemática avançada
+[24/08/2021 às 17:10:44] [gabras] : Funcionario  Não cadastrado. CPF invalido.
+[24/08/2021 às 17:13:37] [gabras] : Funcionario  Não cadastrado. CPF invalido.
+[24/08/2021 às 17:19:56] [gabras] : Cliente RODRIGO CAMPOS Editado com sucesso
+[24/08/2021 às 17:20:19] [gabras] : Livro O PEQUENO PRINCIPE Editado com sucesso
+[24/08/2021 às 17:21:43] [gabras] : Emprestimo do livro 78965 Cadastrado com sucesso
+[24/08/2021 às 17:24:45] [gabras] : Logout de usuário.
+
+[24/08/2021 às 17:24:58] [gabrielVF] : Usuário Funcionário logado.
+[24/08/2021 às 17:25:06] [gabrielVF] : Logout de usuário.
+
+[24/08/2021 às 17:25:16] [gabrielV] : Usuário Gerente logado.
+[24/08/2021 às 17:26:46] [gabrielV] : Emprestimo 20 Devolvido com sucesso.
+[24/08/2021 às 17:27:20] [gabrielV] : Funcionário GABRIEL VASCONCELOS Editado com sucesso
+[24/08/2021 às 17:27:27] [gabrielV] : Logout de usuário.
+
+[24/08/2021 às 17:27:35] [gabrielVF] : Usuário Funcionário logado.
+[24/08/2021 às 17:28:34] [gabrielVF] : Cliente Rafaela Silva não cadastrado. CPF já cadastrado
+[24/08/2021 às 17:29:53] [gabrielVF] : Cliente Rafaela Silva cadastrado.
+[24/08/2021 às 17:30:20] [gabrielVF] : Cliente 096.131.980-16 Editado.
+[24/08/2021 às 17:32:57] [gabrielVF] : Cliente Rafaela Silva cadastrado.
+[24/08/2021 às 17:33:10] [gabrielVF] : Cliente 096.131.980-16 Removido com sucesso
+[24/08/2021 às 17:34:13] [gabrielVF] : Cliente 096.131.980-16 Removido com sucesso
+[24/08/2021 às 17:34:43] [gabrielVF] : Cliente Rafaela Silva cadastrado.
+[24/08/2021 às 17:35:12] [gabrielVF] : Cliente 096.131.980-16 Removido com sucesso
+[24/08/2021 às 17:35:35] [gabrielVF] : Logout de usuário.
+
+[24/08/2021 às 17:35:47] [gabrielVF] : Usuário Funcionário logado.
+[24/08/2021 às 17:36:12] [gabrielVF] : Cliente Rafaela Silva cadastrado.
+[24/08/2021 às 17:36:23] [gabrielVF] : Cliente 096.131.980-16 Removido com sucesso
+[24/08/2021 às 17:37:41] [gabrielVF] : Cliente 096.131.980-16 Removido com sucesso
+[24/08/2021 às 17:38:37] [gabrielVF] : Livro cadastrado. Belos campos
+[24/08/2021 às 17:38:53] [gabrielVF] : Livro 78956 Removido com sucesso
+[24/08/2021 às 17:39:29] [gabrielVF] : Livro 78956 Removido com sucesso
+[24/08/2021 às 17:40:35] [gabrielVF] : emprestimo do livro 78965 cadastrado com sucesso.
+[24/08/2021 às 17:41:40] [gabrielVF] : Emprestimo 21 Removido com sucesso
+[24/08/2021 às 17:42:00] [gabrielVF] : emprestimo do livro 78965 cadastrado com sucesso.
+[24/08/2021 às 17:42:09] [gabrielVF] : Emprestimo 22 Devolvido com sucesso.
+[24/08/2021 às 17:43:30] [gabrielVF] : Falha ao devolver emprestimo 22
+[24/08/2021 às 17:43:40] [gabrielVF] : Logout de usuário.
+

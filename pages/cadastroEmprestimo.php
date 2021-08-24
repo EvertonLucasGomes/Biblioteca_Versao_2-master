@@ -58,7 +58,7 @@ include("../scripts/login/verificaLogin.php");
                     <div class="field-group">
                         <div class="field">
                             <label for="aluguelData">Data do aluguel</label>
-                            <input type="text" name="aluguelData" id="aluguelData"  required>
+                            <input type="text" name="aluguelData" id="aluguelData" placeholder="AAAA-MM-DD" required>
                         </div>
                     </div>
                 </fieldset>

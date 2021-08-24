@@ -10,6 +10,10 @@ header {
   padding: 20px;
 }
 
+label {
+  font: 700 20px "Roboto", sans-serif;
+}
+
 .content {
   display: flex;
   align-items: center;
@@ -43,7 +47,7 @@ header {
   text-decoration: none;
   display: inline;
   padding: 50px;
-  font-size: 20px;
+  font: 700 20px "Roboto", sans-serif;
   transition: background 0.3s;
 }
 
@@ -65,16 +69,16 @@ header {
 
 #content {
   display: flex;
-  height: 100vh;
+  height: 100%;
 }
 
 aside {
-  flex: 3;
   background: #9ba9ff;
   display: flex;
+  flex: 3;
   flex-direction: column;
   align-items: center;
-  height: 100%;
+  height: 200vh;
 }
 
 aside img {
@@ -93,7 +97,7 @@ aside img {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font: 18px "Roboto", sans-serif;
   cursor: pointer;
   border: 0;
   transition: filter 0.2s;
@@ -105,9 +109,10 @@ aside img {
 }
 
 main {
-  flex: 8;
   background: #fff;
   display: flex;
+  height: auto;
+  flex: 8;
   flex-direction: column;
   align-items: center;
 }
@@ -121,7 +126,7 @@ main strong {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
+  font: 30px "Roboto", sans-serif;
   color: #fff;
   max-width: 860px;
 }

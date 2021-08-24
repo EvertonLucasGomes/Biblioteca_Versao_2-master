@@ -79,7 +79,7 @@ include("../scripts/login/verificaLoginGerente.php");
 
                         <div class="field">
                             <label for="bairroFuncionario">Bairro</label>
-                            <input type="text" name="bairroFuncionario" id="bairro" required>
+                            <input type="text" name="bairroFuncionario" id="" required>
                         </div>
                     </div>
                     

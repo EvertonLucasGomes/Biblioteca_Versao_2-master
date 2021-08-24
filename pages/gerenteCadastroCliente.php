@@ -74,14 +74,12 @@ include("../scripts/login/verificaLoginGerente.php");
                     <div class="field-group">
                         <div class="field">
                             <label for="cidadeCliente">Cidade</label>
-                            <select name="cidadeCliente" id="">
-                                <option value="selecionar">Selecione a cidade</option>
-                            </select>
+                            <input name="cidadeCliente" id="" required>
                         </div>
 
                         <div class="field">
                             <label for="bairroCliente">Bairro</label>
-                            <input type="text" name="bairroCliente" id="bairro" required>
+                            <input type="text" name="bairroCliente" required>
                         </div>
                     </div>
                     

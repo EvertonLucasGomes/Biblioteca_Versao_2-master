@@ -45,7 +45,7 @@ include("../scripts/login/verificaLogin.php");
                 if(!util::existNumero($_POST["nameCliente"]) && !util::existNumero($_POST["cidadeCliente"]))
                 {
                     if(util::validaCPF($_POST["cpfCliente"])){
-                        if(persistencia::getInstance()->existCliente(!$_POST["cpfCliente"])){
+                        if(!persistencia::getInstance()->existCliente(!$_POST["cpfCliente"])){
                             conexao::getInstance()->salvarCliente(
                                 $_POST["cpfCliente"], 
                                 strtoupper($_POST["nameCliente"]), 
