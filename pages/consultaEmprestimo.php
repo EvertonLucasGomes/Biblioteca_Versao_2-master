@@ -10,6 +10,8 @@ include("../scripts/login/verificaLogin.php");
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="icon" type="imagem/png" href="../assets/icon.png" />
     <link rel="stylesheet" href="../styles/consulta.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <title>Consultar empr&eacute;stimo de livro</title>
 </head>
     <header>
@@ -45,7 +47,7 @@ include("../scripts/login/verificaLogin.php");
             
             <form action="exibirClienteEmprestimos.php" method="POST">
                 <span>Informe o CPF do cliente</span>
-                <input type="text" name="cpfCliente" id="cpfCliente" required>
+                <input type="text" name="cpfCliente" id="cpfCliente" placeholder="000.000.000-00" required>
                 <input id="botao" type="submit" value="Consultar">
             </form>
             

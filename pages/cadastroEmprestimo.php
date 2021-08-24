@@ -45,7 +45,7 @@ include("../scripts/login/verificaLogin.php");
                 <fieldset>
                     <div class="field">
                         <label for="cpfCliente">CPF do cliente</label>
-                        <input type="text" name="cpfCliente" id="cpfCliente" required>
+                        <input type="text" name="cpfCliente" id="cpfCliente" placeholder="000.000.000-00" required>
                     </div>
                     
                     <div class="field-group">

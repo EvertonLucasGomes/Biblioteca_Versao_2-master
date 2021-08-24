@@ -52,7 +52,7 @@ include("../scripts/login/verificaLoginGerente.php");
                     <div class="field-group">
                         <div class="field">
                             <label for="cpfFuncionario">CPF</label>
-                            <input type="text" name="cpfFuncionario" id="cpfFuncionario" required>
+                            <input type="text" name="cpfFuncionario" id="cpfFuncionario" placeholder="000.000.000-00" required>
                         </div>
 
                         <div class="field">
@@ -67,7 +67,7 @@ include("../scripts/login/verificaLoginGerente.php");
 
                         <div class="field">
                             <label for="telefoneFuncionario">Telefone</label>
-                            <input type="text" name="telefoneFuncionario" id="telefoneFuncionario" required>
+                            <input type="text" name="telefoneFuncionario" id="telefoneFuncionario" placeholder="(00)00000-0000" required>
                         </div>
                     </div>
 

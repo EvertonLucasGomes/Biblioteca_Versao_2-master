@@ -67,7 +67,7 @@ include("../scripts/login/verificaLoginGerente.php");
 
                         <div class="field">
                             <label for="telefoneCliente">Telefone</label>
-                            <input type="text" name="telefoneCliente" id="telefoneCliente" required>
+                            <input type="text" name="telefoneCliente" id="telefoneCliente" placeholder="(00)00000-0000" required>
                         </div>
                     </div>
 

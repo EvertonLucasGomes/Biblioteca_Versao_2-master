@@ -11,6 +11,8 @@ include("../scripts/login/verificaLoginGerente.php");
     <link rel="stylesheet" href="../styles/cadastroForms.css">
     <link rel="icon" type="imagem/png" href="../assets/icon.png" />
     <link rel="stylesheet" href="../styles/consulta.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <title>Cadastro de cliente</title>
 </head>
     <header>
