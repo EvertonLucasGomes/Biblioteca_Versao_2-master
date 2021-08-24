@@ -1,8 +1,10 @@
 <?php
+    //para verificar os testes feitos no php unit comente este bloco de require
     require_once("../scripts/modelo/cliente.php");
     require_once("../scripts/modelo/livro.php");
     require_once("../scripts/modelo/funcionario.php");
     require_once("../scripts/modelo/clienteAlugaLivro.php");
+    //fim do bloco
     
     require_once("connection.php");
     

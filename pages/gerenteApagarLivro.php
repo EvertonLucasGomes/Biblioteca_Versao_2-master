@@ -9,6 +9,8 @@ include("../scripts/login/verificaLoginGerente.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/msg.css">
+    <link rel="stylesheet" href="../styles/consulta.css">
+    <link rel="stylesheet" href="../styles/tabela.css">
     <link rel="icon" type="imagem/png" href="../assets/icon.png" />
     <link rel="stylesheet" href="../styles/consulta.css">
     <title>Apagar Livro</title>

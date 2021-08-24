@@ -39,6 +39,7 @@ include("../scripts/login/verificaLoginGerente.php");
         
     <main>
         <strong>Devolu&ccedil;&atilde;o de livros</strong>
+        <div id="content_main">
         <?php
             require_once("../scripts/facade/conexao.php");
 
@@ -56,6 +57,7 @@ include("../scripts/login/verificaLoginGerente.php");
         <form action="gerenteDevolucaoLivros.php">
             <input type="submit" value="voltar" id="botao">
         </form>
+        </div>
     </main>
     </div>
 </body>
