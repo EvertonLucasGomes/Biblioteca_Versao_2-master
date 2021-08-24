@@ -41,7 +41,7 @@ include("../scripts/login/verificaLogin.php");
             <?php
                 require_once('../scripts/persistencia/persistencia.php');
 
-                if(persistencia::getInstance()->dependenciaLivro($_POST['cod']) == false){
+                if(!persistencia::getInstance()->dependenciaLivro($_POST['cod'])){
                     persistencia::getInstance()->deleteLivro(
                         $_POST['cod']
                     );

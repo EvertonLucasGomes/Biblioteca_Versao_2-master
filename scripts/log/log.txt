@@ -1,3 +1,16 @@
 [24/08/2021 às 11:35:22] [gabras] : Usuário Gerente logado.
 [24/08/2021 às 11:35:31] [gabras] : Logout de usuário.
 
+[24/08/2021 às 12:37:38] [gabras] : Usuário Gerente logado.
+[24/08/2021 às 12:37:40] [gabras] : Logout de usuário.
+
+[24/08/2021 às 12:37:46] [joseF] : Usuário Funcionário logado.
+[24/08/2021 às 12:38:11] [joseF] : Livro cadastradover
+[24/08/2021 às 12:39:24] [joseF] : Livro  não cadastrado. Código já em utilização
+[24/08/2021 às 12:40:51] [joseF] : Livro 5 não cadastrado. Código já em utilização
+[24/08/2021 às 12:44:49] [joseF] : Logout de usuário.
+
+[24/08/2021 às 12:44:53] [gabras] : Usuário Gerente logado.
+[24/08/2021 às 12:45:21] [gabras] : Cliente eve45 não cadastrado. Operação inválida
+[24/08/2021 às 12:46:48] [gabras] : Cliente Rafaela Cadastrado com sucesso.
+[24/08/2021 às 12:47:42] [gabras] : Cliente Rafaela não cadastrado. CPF já cadastrado

@@ -43,11 +43,11 @@ include("../scripts/login/verificaLoginGerente.php");
             <form action="gerenteCadastrarFuncionario.php">
                 <?php
                     include("../scripts/facade/conexao.php");
-                    if(util::existNumero($_POST["nameFuncionario"]) == false and util::existNumero($_POST["cidadeFuncionario"]) == false)
+                    if(!util::existNumero($_POST["nameFuncionario"]) && !util::existNumero($_POST["cidadeFuncionario"]))
                     {
                         if(util::validaCPF($_POST["cpfFuncionario"]))
                         {
-                            if(persistencia::getInstance()->existFuncionario($_POST["cpfFuncionario"]) == false)
+                            if(!persistencia::getInstance()->existFuncionario($_POST["cpfFuncionario"]))
                             {
                                 conexao::getInstance()->salvarFuncionario(
                                 $_POST["cpfFuncionario"], 

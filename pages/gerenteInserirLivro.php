@@ -43,9 +43,9 @@ include("../scripts/login/verificaLoginGerente.php");
             <?php
                 include("../scripts/facade/conexao.php");
 
-                if(util::existNumero($_POST["autor"]) == false)
+                if(!util::existNumero($_POST["autor"]) )
                 {
-                    if(persistencia::getInstance()->existLivro($_POST['cod']) == false){
+                    if(!persistencia::getInstance()->existLivro($_POST['cod'])){
                         conexao::getInstance()->salvarLivro(
                             $_POST['cod'],
                             strtoupper($_POST['nome']),
@@ -62,7 +62,7 @@ include("../scripts/login/verificaLoginGerente.php");
                     }
                     else{
                         print('<div class="alerta error">Já existe um livro cadastrado com este código.</div>');
-                        util::generateLog('Livro '. $_POST["codLivro"]. ' não cadastrado. Código já em utilização');
+                        util::generateLog('Livro '. $_POST["cod"]. ' não cadastrado. Código já em utilização');
                     }
                 }else{
                     print('<div class="alerta error">Não insira caracteres numéricos nos campos "nome" e "cidade".</div>');

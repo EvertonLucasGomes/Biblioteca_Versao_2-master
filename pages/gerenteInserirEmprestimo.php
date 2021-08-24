@@ -44,11 +44,11 @@ include("../scripts/login/verificaLoginGerente.php");
                 <?php
                     include("../scripts/facade/conexao.php");
                     
-                    if(persistencia::getInstance()->existCliente($_POST['cpfCliente']) == false){
+                    if(!persistencia::getInstance()->existCliente($_POST['cpfCliente'])){
                         print('<div class="alerta error">Cliente não existe.</div>');
                         util::generateLog('emprestimo do livro '. $_POST["codLivro"]. ' não cadastrado. Cliente não encontrado.');
                     }
-                    elseif(persistencia::getInstance()->existLivro($_POST['codLivro']) == false){
+                    elseif(!persistencia::getInstance()->existLivro($_POST['codLivro'])){
                         print('<div class="alerta error">Livro não existe.</div>');
                         util::generateLog('emprestimo do livro '. $_POST["codLivro"]. ' não cadastrado. Livro não existente.');
                     }
